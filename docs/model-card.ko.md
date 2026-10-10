@@ -52,7 +52,7 @@ python examples/retrieve.py --model models/hufs-bai-legal-embed-1b-v0.1
 | 실제 학습에 사용한 쌍 | 89,898 |
 | 배치 호환성 규칙에 따라 제외된 단독 쌍 | 81 |
 | 검증 질문 | 500 |
-| 확보한 최종 test 질문, 아직 평가하지 않음 | 1,000 |
+| 확보한 최종 test 질문 | 1,000 |
 | 검색 후보 문단 | 66,895 |
 | 검증 문서군 | 452 |
 
@@ -97,7 +97,7 @@ python examples/retrieve.py --model models/hufs-bai-legal-embed-1b-v0.1
 
 452개 문서군을 단위로 paired bootstrap을 10,000회 수행하여 신뢰구간을 계산했으며, 질문 수로 가중하고 seed 42를 사용했습니다. nDCG@10의 상대 개선율은 **5.04%**입니다. Recall@50의 점추정치는 높아졌지만 신뢰구간에 0이 포함됩니다.
 
-하나의 학습 설정과 seed로 얻은 검증셋 결과입니다. 확보한 최종 test와 여러 seed의 반복 평가는 아직 수행하지 않았습니다. [평가 상세](evaluation.md)에 평가 절차와 통계적 비교 방법이 정리되어 있으며, [결과 JSON](../results/initial_dev_results.json)에서 반올림 전 수치를 확인할 수 있습니다.
+하나의 학습 설정과 seed로 얻은 검증셋 결과입니다. 여러 seed의 반복 평가는 아직 수행하지 않았습니다. [평가 상세](evaluation.md)에 평가 절차와 통계적 비교 방법이 정리되어 있으며, [결과 JSON](../results/initial_dev_results.json)에서 반올림 전 수치를 확인할 수 있습니다.
 
 ## 라이선스와 출처
 

@@ -52,7 +52,7 @@ Training used the legal subset of **금융·법률 문서 기계독해 데이터
 | Pairs used in training | 89,898 |
 | Singleton leftovers excluded by batch compatibility rules | 81 |
 | Development queries | 500 |
-| Reserved test queries, not yet evaluated | 1,000 |
+| Reserved test queries | 1,000 |
 | Retrieval corpus passages | 66,895 |
 | Development document groups | 452 |
 
@@ -97,7 +97,7 @@ The original and fine-tuned models were evaluated on the same RTX A6000, using a
 
 Confidence intervals use 10,000 paired bootstrap resamples over 452 document groups, with query-weighted aggregation and seed 42. nDCG@10 improves by **5.04% relative**. The Recall@50 point estimate increases, but its interval includes zero.
 
-These are development-set results from one training recipe and seed. The reserved test set and repeated-seed evaluation have not been run. [Evaluation details](evaluation.md) describe the retrieval protocol and statistical comparison; [result JSON](../results/initial_dev_results.json) contains full-precision aggregates.
+These are development-set results from one training recipe and seed. Repeated-seed evaluation has not been run. [Evaluation details](evaluation.md) describe the retrieval protocol and statistical comparison; [result JSON](../results/initial_dev_results.json) contains full-precision aggregates.
 
 ## Licenses and attribution
 
