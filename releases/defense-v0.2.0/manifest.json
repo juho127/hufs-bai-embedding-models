@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "model_id": "hufs-bai-defense-embed-1b-v0.2",
+  "repository": "juho127/hufs-bai-embedding-models",
+  "release_tag": "defense-v0.2.0",
+  "license": "OpenMDW-1.1",
+  "base_model": {
+    "id": "nvidia/Nemotron-3-Embed-1B-BF16",
+    "revision": "c0c9fea93ea424587517f2c59e20db9f1d6bf615"
+  },
+  "parameters": 1140918272,
+  "precision": "float32",
+  "embedding_dimension": 2048,
+  "max_sequence_length": 1536,
+  "total_size_bytes": 4580921066,
+  "verification": {
+    "tensor_count": 146,
+    "values_exact": true,
+    "synthetic_cpu_embedding_max_abs_error": 0.0
+  },
+  "files": [
+    {
+      "path": "1_Pooling/config.json",
+      "asset": "1_Pooling-config.json",
+      "size_bytes": 91,
+      "sha256": "3c1e7e81de43a8a26715b71dc43b372b722f319bd7236e53d237cf0ab9b5f82d"
+    },
+    {
+      "path": "2_Normalize/config.json",
+      "asset": "2_Normalize-config.json",
+      "size_bytes": 97,
+      "sha256": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524"
+    },
+    {
+      "path": "BASE_MODEL_CARD.md",
+      "asset": "BASE_MODEL_CARD.md",
+      "size_bytes": 36297,
+      "sha256": "6e811480c966ca54fca9a5cbd0e5ae60df15244bfc70bb9db155c2b92fa23f8e"
+    },
+    {
+      "path": "LICENSE",
+      "asset": "LICENSE",
+      "size_bytes": 2796,
+      "sha256": "5ae76a0d16eef67e28c81bfdb0b3c8687d14e9b57094090151e7541aac457ae9"
+    },
+    {
+      "path": "NOTICE.md",
+      "asset": "NOTICE.md",
+      "size_bytes": 8759,
+      "sha256": "83becfefdd5ab8af8c26fd0b961508ba6c0ec31e468b437008d71f3fcd64f356"
+    },
+    {
+      "path": "README.md",
+      "asset": "README.md",
+      "size_bytes": 16737,
+      "sha256": "145d6db569097353c3ed86862165dff7ba16cc8bac4d6dcb1d06bf1fd6f5b617"
+    },
+    {
+      "path": "TRAINING_SOURCES.json",
+      "asset": "TRAINING_SOURCES.json",
+      "size_bytes": 49792,
+      "sha256": "a7662e2a2fd8be7c6510d9a39b58ddd4b9108ac8462626c239eb9aed7fa1f45e"
+    },
+    {
+      "path": "config.json",
+      "asset": "config.json",
+      "size_bytes": 1091,
+      "sha256": "03ee25692c22627343d0ab47cf1ffdf3c773740ecf5a104194393dbb5f371830"
+    },
+    {
+      "path": "config_sentence_transformers.json",
+      "asset": "config_sentence_transformers.json",
+      "size_bytes": 299,
+      "sha256": "3b043432669eb2845b042f3b26b3ee8719a3dd33fa79b2783752580b802a6140"
+    },
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "asset": "model-00001-of-00003.safetensors",
+      "size_bytes": 1778445520,
+      "sha256": "81c42cdff917e079f55a093b8549bfe19f794d4e627c1ea7b44e4cbc16ef048d"
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "asset": "model-00002-of-00003.safetensors",
+      "size_bytes": 1795301096,
+      "sha256": "fbdcdb2822eda17706f219a206888236e5658aa0e7254d085bb01626e0d88ec9"
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "asset": "model-00003-of-00003.safetensors",
+      "size_bytes": 989942248,
+      "sha256": "37dcedb212fec0bd3bbcc75690ffbb905b3f819f78723d8dea0ddeaf97c326a4"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "asset": "model.safetensors.index.json",
+      "size_bytes": 11127,
+      "sha256": "5359d50b9733f07deda028311a116736d7cf75cb7129e515c1929a144696a3ce"
+    },
+    {
+      "path": "model_provenance.json",
+      "asset": "model_provenance.json",
+      "size_bytes": 1145,
+      "sha256": "d7af5e3513c6f5a41e58d8af81f402879faec98c0b6910d107a83e2a381529f1"
+    },
+    {
+      "path": "modules.json",
+      "asset": "modules.json",
+      "size_bytes": 413,
+      "sha256": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd"
+    },
+    {
+      "path": "sentence_bert_config.json",
+      "asset": "sentence_bert_config.json",
+      "size_bytes": 241,
+      "sha256": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8"
+    },
+    {
+      "path": "test_results.json",
+      "asset": "test_results.json",
+      "size_bytes": 4083,
+      "sha256": "0adf23110b5368f8d105dbc2e1fd71e4530c2e323182d308d4755c69523743e9"
+    },
+    {
+      "path": "tokenizer.json",
+      "asset": "tokenizer.json",
+      "size_bytes": 17077932,
+      "sha256": "0fa070a479dfb26a77acedeec5a43c4fb7e4314fe7d4a0a80ef281fe48c79d68"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "asset": "tokenizer_config.json",
+      "size_bytes": 21137,
+      "sha256": "e53e82376cd6a0acb9867ad511b9e35c07548fcf57f46a48688bc26cf090517b"
+    },
+    {
+      "path": "training_precision.json",
+      "asset": "training_precision.json",
+      "size_bytes": 165,
+      "sha256": "817846d63fa856614f455382153d9ebac4a5e04ebdbecd4c93888c328ecd1ff9"
+    }
+  ]
+}

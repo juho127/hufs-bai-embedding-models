@@ -50,8 +50,8 @@ def validate_manifest(manifest):
     if manifest.get("repository") != REPOSITORY:
         raise ReleaseError(f"Only releases from {REPOSITORY} are accepted.")
     tag = manifest.get("release_tag")
-    if not isinstance(tag, str) or not re.fullmatch(r"v\d+\.\d+\.\d+(?:-[A-Za-z0-9.-]+)?", tag):
-        raise ReleaseError("Invalid release_tag; expected a version such as v0.1.0.")
+    if not isinstance(tag, str) or not re.fullmatch(r"(?:(?:defense|legal)-)?v\d+\.\d+\.\d+(?:-[A-Za-z0-9.-]+)?", tag):
+        raise ReleaseError("Invalid release_tag; expected a version such as v0.1.0 or defense-v0.2.0.")
     files = manifest.get("files")
     if not isinstance(files, list) or not files:
         raise ReleaseError("The manifest must contain a nonempty files list.")

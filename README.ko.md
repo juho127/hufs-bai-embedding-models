@@ -1,4 +1,4 @@
-# HUFS BAI Legal Embed 1B
+# HUFS BAI Embedding Models
 
 English and Korean model information is available together in the [bilingual README](README.md).
 

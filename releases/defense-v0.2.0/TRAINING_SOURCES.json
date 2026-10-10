@@ -1,0 +1,1123 @@
+{
+  "schema_version": 1,
+  "model_id": "hufs-bai-defense-embed-1b-v0.2",
+  "purpose": "Attribution metadata for the 185 unique source documents used in 283 supervised training pairs. No source text or evaluation labels are included.",
+  "source_count": 185,
+  "training_pairs": 283,
+  "license": "KOGL Type 1, text only",
+  "license_url": "https://www.kogl.or.kr/info/licenseType1.do",
+  "attribution_en": "This model uses text from Ministry of National Defense daily briefings published through Korea Policy Briefing under KOGL Type 1. Original works can be accessed free of charge at the source URLs. Source institutions do not sponsor or endorse this model.",
+  "attribution_ko": "이 모델은 국방부가 작성하고 대한민국 정책브리핑에서 공공누리 제1유형으로 개방한 국방부 일일 정례 브리핑의 본문 텍스트를 이용했습니다. 개별 저작물의 작성일과 원문 주소는 아래와 같으며 원문은 해당 주소에서 무료로 열람할 수 있습니다. 원천 자료 기관이 이 모델을 후원하거나 보증하는 것은 아닙니다.",
+  "sources": [
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-07-05",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156514929"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-07-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156516504"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-07-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156518203"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-08-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156519106"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-08-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156519323"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-09-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156525801"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-09-22",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156527072"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-10-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156530549"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-10-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156531062"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-10-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156532420"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-10-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156533016"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-10-31",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156533746"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-11-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156534403"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-11-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156535029"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-11-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156536578"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-11-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156539067"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-12-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156540009"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-12-05",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156540578"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-12-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156542134"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-12-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156542722"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2022-12-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156544843"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-01-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156546920"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-02-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156552200"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-02-21",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156553691"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156555363"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156555886"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156556076"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156557009"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156557180"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-16",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156557616"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-03-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156559521"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-04",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156560892"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156561999"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156562491"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156563031"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-20",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156563724"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-24",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156564221"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-04-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156564969"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-05-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156568571"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-05-16",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156569798"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-05-22",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156570763"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-05-30",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156572054"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-06-05",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156573543"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-06-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156575215"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-06-29",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156577813"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156578576"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156579211"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-10",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156579644"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156579870"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156580845"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-20",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156581536"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156582671"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-07-31",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156583228"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-08-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156585286"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-08-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156587141"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-08-29",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156587364"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-08-31",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156587861"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-04",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156588331"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-05",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156588482"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156589340"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156589618"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156590157"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-09-18",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156590755"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-10-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156594036"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-10-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156594713"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-10-19",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156595193"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-10-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156595698"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156597594"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156598259"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156598850"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-20",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156600526"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156601248"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156601738"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156602001"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-11-30",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156602583"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-12-05",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156603319"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-12-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156604426"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-12-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156604636"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-12-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156607560"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2023-12-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156608127"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156608856"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-04",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156609219"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-08",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156609634"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156609801"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156610212"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-01-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156611979"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-02-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156614368"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-02-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156615507"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-02-19",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156615909"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-02-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156617385"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-03-04",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156618279"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-03-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156622011"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-03-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156622516"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156623166"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156623398"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-04",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156623860"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156625283"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-16",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156625527"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-18",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156626010"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-04-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156627280"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-05-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156628789"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-05-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156629293"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-05-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156630286"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-05-30",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156633302"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156633892"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-10",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156634791"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156636023"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-18",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156636281"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-24",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156637345"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-06-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156638233"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-07-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156638841"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-07-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156639119"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-07-08",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156639956"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-07-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156640166"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-08-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156647163"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-08-29",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156647902"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156648663"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-10",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156650054"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156650577"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-19",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156651194"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156651595"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-09-30",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156652970"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-10-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156653762"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-10-22",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156655965"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-10-31",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156657896"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-11-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156662078"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-11-28",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156662883"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156663433"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156663704"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156664686"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156665396"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-19",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156666586"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156667059"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156667530"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2024-12-30",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156668179"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-01-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156669251"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-01-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156670158"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-01-16",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156670555"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-01-21",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156671195"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-01-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156671747"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-02-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156673156"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-02-13",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156674167"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-02-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156674605"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-02-20",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156675209"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-02-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156675878"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-03-24",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156680375"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-03-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156680645"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-03-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156681119"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156681964"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156682392"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156682846"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-08",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156683026"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-21",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156685301"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-22",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156685498"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-04-29",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156686723"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-05-08",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156688004"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-05-20",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156689798"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-05-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156690789"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-06-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156692044"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-06-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721567"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-06-17",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721577"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-07-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721612"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-07-22",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721660"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-08-14",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721735"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-09-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721790"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-09-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156721836"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-10-21",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156722143"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-11-03",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156724710"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-12-02",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156732591"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-12-15",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156735097"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-12-19",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156735916"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2025-12-23",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156736412"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-01-29",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156741960"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-02-10",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156743931"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-05-07",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156760180"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-05-12",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156761056"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-05-26",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156763467"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-06-01",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156764666"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-06-11",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156766158"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-06-25",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156768029"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-07-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156769661"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-07-09",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156770171"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-08-10",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156773932"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-08-27",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156775714"
+    },
+    {
+      "title": "국방부 일일 정례 브리핑",
+      "publisher": "국방부 / 대한민국 정책브리핑",
+      "published_date": "2026-10-06",
+      "source_url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156784412"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "model_id": "hufs-bai-defense-embed-1b-v0.2",
+  "release_tag": "defense-v0.2.0",
+  "evaluation": "held_out_test",
+  "evaluation_date": "2026-10-10",
+  "base_model": {
+    "id": "nvidia/Nemotron-3-Embed-1B-BF16",
+    "revision": "c0c9fea93ea424587517f2c59e20db9f1d6bf615"
+  },
+  "primary_metric": "ndcg@10",
+  "counts": {
+    "training_pairs": 283,
+    "training_source_groups": 185,
+    "development_queries": 35,
+    "development_source_groups": 23,
+    "test_queries": 35,
+    "test_source_groups": 24,
+    "corpus_passages": 4904
+  },
+  "training": {
+    "epochs": 5,
+    "seed": 42,
+    "mode": "full_parameter",
+    "loss": "CachedMultipleNegativesRankingLoss",
+    "learning_rate": 2e-06,
+    "logical_batch_maximum": 128,
+    "micro_batch": 4,
+    "optimizer_steps": 30,
+    "checkpoint_rule": "fixed_final_epoch_5",
+    "checkpoint_selected_on_test": false,
+    "retrained_for_test": false
+  },
+  "protocol": {
+    "retrieval": "exact_cosine_full_corpus",
+    "top_k": 50,
+    "gain": "2**relevance-1",
+    "unjudged": "nonrelevant",
+    "max_seq_length": 1536,
+    "tie_break": "corpus_order",
+    "query_api": "encode_query",
+    "document_api": "encode_document",
+    "parameter_dtypes": [
+      "torch.float32"
+    ],
+    "requested_load_dtype": "float32",
+    "autocast": "bfloat16",
+    "attention": "sdpa",
+    "batch_size": 8,
+    "prompts": {
+      "document": "passage: ",
+      "query": "query: "
+    }
+  },
+  "metrics": {
+    "ndcg@10": {
+      "baseline": 0.7396681898239585,
+      "candidate": 0.7947356768144574,
+      "delta": 0.055067486990498904,
+      "delta_ci95": [
+        0.023923296582253947,
+        0.0908768644570893
+      ]
+    },
+    "mrr@10": {
+      "baseline": 0.6945578231292517,
+      "candidate": 0.7547619047619047,
+      "delta": 0.060204081632653006,
+      "delta_ci95": [
+        0.026785714285714284,
+        0.09566558441558441
+      ]
+    },
+    "recall@10": {
+      "baseline": 0.8857142857142857,
+      "candidate": 0.9142857142857143,
+      "delta": 0.02857142857142858,
+      "delta_ci95": [
+        0.0,
+        0.09679386309992102
+      ]
+    },
+    "recall@50": {
+      "baseline": 0.9142857142857143,
+      "candidate": 0.9714285714285714,
+      "delta": 0.05714285714285716,
+      "delta_ci95": [
+        0.0,
+        0.14705882352941177
+      ]
+    }
+  },
+  "bootstrap": {
+    "method": "paired_percentile",
+    "resampling_unit": "source_group",
+    "unit_count": 24,
+    "replicates": 10000,
+    "seed": 42,
+    "aggregation": "query_weighted_group_sums",
+    "rng": "numpy.random.PCG64"
+  },
+  "evidence_scope": {
+    "training_seeds": 1,
+    "label_review": "AI semantic review, not expert annotation",
+    "positive_labels_per_query": 1,
+    "test_evaluation_count": 1,
+    "event_disjoint_split": false,
+    "temporal_generalization_evaluated": false,
+    "base_pretraining_contamination_known": false,
+    "source_text_distributed": false,
+    "derived_train_evaluation_text_distributed": false
+  },
+  "leakage_audit": {
+    "direct_heldout_supervision_detected": false,
+    "exact_normalized_question_answer_overlap_count": 0,
+    "char12_shingle_jaccard_0_90_overlap_count": 0,
+    "recurring_event_and_semantic_overlap_present": true,
+    "corpus_used_for_training_loss_or_negative_mining": false,
+    "statement": "Source-family splits prevent direct document-family reuse; different dated briefings can share recurring events and semantic information. Event-disjoint and future-time generalization have not been established."
+  },
+  "interpretation": "nDCG@10 and MRR@10 improve on this fixed, AI-reviewed held-out retrieval set; their paired source-group bootstrap intervals exclude zero. Recall point estimates improve, but their intervals include zero. These intervals do not estimate training-seed variability.",
+  "metric_verification": {
+    "all_query_metrics_and_bootstrap_reproduced_locally": true,
+    "independent_bootstrap_agreement": true
+  }
+}

@@ -48,7 +48,7 @@ def main():
                 parser.error("This example requires BF16 support on CUDA; alternatively use --device cpu.")
 
     # Keep FP32 parameters, including full-fine-tuning updates, and use BF16
-    # only for CUDA compute. Local LoRA tensors are restored exactly by the loader.
+    # only for CUDA compute.
     model, _ = load_sentence_transformer(args.model, device=device, dtype=torch.float32)
     model.max_seq_length = args.max_seq_length
     for name, expected in (("query", "query: "), ("document", "passage: ")):

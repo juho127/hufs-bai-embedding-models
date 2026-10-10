@@ -54,6 +54,16 @@ class ReleaseDownloadTests(unittest.TestCase):
         self.assertEqual(result["downloaded"], 0)
         opener.assert_not_called()
 
+    def test_defense_manifest_download_uses_its_release_tag(self):
+        self.manifest["model_id"] = "hufs-bai-defense-embed-1b-v0.2"
+        self.manifest["release_tag"] = "defense-v0.2.0"
+        opener = Mock(side_effect=[io.BytesIO(payload) for payload in self.payloads])
+        result = download_release(self.manifest, self.output, opener=opener)
+        self.assertEqual(result["downloaded"], 2)
+        self.assertEqual(opener.call_args_list[0].args[0].full_url,
+                         f"https://github.com/{REPOSITORY}/releases/download/defense-v0.2.0/"
+                         "model-00001-of-00003.safetensors")
+
     def test_mismatching_existing_file_blocks_all_downloads(self):
         target = self.output / "1_Pooling/config.json"
         target.parent.mkdir(parents=True)
@@ -111,7 +121,10 @@ class ReleaseDownloadTests(unittest.TestCase):
                 self.assertFalse(self.output.exists())
 
     def test_foreign_repository_tag_injection_and_asset_paths_are_rejected(self):
-        for field, value in [("repository", "another/project"), ("release_tag", "../../v0.1.0")]:
+        for field, value in [("repository", "another/project"), ("release_tag", "../../v0.1.0"),
+                             ("release_tag", "defense-v0.2.0/../../other"),
+                             ("release_tag", "defense-v0.2.0?token=x"),
+                             ("release_tag", "foreign-v0.2.0")]:
             manifest = copy.deepcopy(self.manifest)
             manifest[field] = value
             with self.assertRaises(ReleaseError):
@@ -173,11 +186,15 @@ class ReleaseDownloadTests(unittest.TestCase):
         opener.assert_not_called()
         self.assertFalse(self.output.exists())
 
-    def test_checked_in_manifest_if_present(self):
-        path = Path(__file__).resolve().parents[1] / "releases/v0.1.0/manifest.json"
-        if not path.exists():
-            self.skipTest("Release manifest has not been generated yet.")
-        validate_manifest(json.loads(path.read_text(encoding="utf-8")))
+    def test_checked_in_manifests_if_present(self):
+        paths = sorted((Path(__file__).resolve().parents[1] / "releases").glob("*/manifest.json"))
+        if not paths:
+            self.skipTest("Release manifests have not been generated yet.")
+        for path in paths:
+            with self.subTest(manifest=str(path)):
+                manifest = json.loads(path.read_text(encoding="utf-8"))
+                validate_manifest(manifest)
+                self.assertEqual(path.parent.name, manifest["release_tag"])
 
 
 if __name__ == "__main__":
