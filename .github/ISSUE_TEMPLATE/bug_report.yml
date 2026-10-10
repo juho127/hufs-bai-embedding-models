@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible software problem.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem and expected behavior
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include commands and a small synthetic example. Do not upload licensed data, credentials, or private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, torch/CUDA, GPU, package versions, and repository revision.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant error output
+      description: Remove credentials, private paths, and source document text.
+      render: text

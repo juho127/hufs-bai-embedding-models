@@ -1,0 +1,46 @@
+# Licensed source data, checkpoints, caches and private execution artifacts.
+/data/
+/models/
+/runs/
+/logs/
+/cache/
+/reports/
+/private/
+/results/local/
+*.rankings.jsonl
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Credentials and machine-local configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# Sanitized aggregate results belong under results/ and remain trackable.

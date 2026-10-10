@@ -1,0 +1,9 @@
+# Install the platform-specific torch==2.11.0 wheel first; see docs/setup.md.
+sentence-transformers==6.1.0
+transformers==5.7.0
+peft==0.21.2
+accelerate==1.13.0
+huggingface-hub==1.13.0
+numpy==2.2.6
+safetensors==0.7.0
+tokenizers==0.22.2

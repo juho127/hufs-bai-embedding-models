@@ -1,0 +1,5 @@
+# Install torch==2.11.0 from https://download.pytorch.org/whl/cpu first.
+# CI exercises small synthetic fixtures and mocks the model-loading API.
+numpy==2.2.6
+safetensors==0.7.0
+torch==2.11.0
