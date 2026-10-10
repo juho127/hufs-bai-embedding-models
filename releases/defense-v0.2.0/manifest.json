@@ -12,7 +12,7 @@
   "precision": "float32",
   "embedding_dimension": 2048,
   "max_sequence_length": 1536,
-  "total_size_bytes": 4580921066,
+  "total_size_bytes": 4580919581,
   "verification": {
     "tensor_count": 146,
     "values_exact": true,
@@ -46,20 +46,20 @@
     {
       "path": "NOTICE.md",
       "asset": "NOTICE.md",
-      "size_bytes": 8759,
-      "sha256": "83becfefdd5ab8af8c26fd0b961508ba6c0ec31e468b437008d71f3fcd64f356"
+      "size_bytes": 8684,
+      "sha256": "72d01a86249fe4a603fe902098b577af5ec8e44031f81092fb2c3dc3fc144652"
     },
     {
       "path": "README.md",
       "asset": "README.md",
-      "size_bytes": 16737,
-      "sha256": "145d6db569097353c3ed86862165dff7ba16cc8bac4d6dcb1d06bf1fd6f5b617"
+      "size_bytes": 16610,
+      "sha256": "d4fc92dafe8d951d623fdd0099ef7bb79f2ed28bbe57015d0201bf7540177fc4"
     },
     {
       "path": "TRAINING_SOURCES.json",
       "asset": "TRAINING_SOURCES.json",
-      "size_bytes": 49792,
-      "sha256": "a7662e2a2fd8be7c6510d9a39b58ddd4b9108ac8462626c239eb9aed7fa1f45e"
+      "size_bytes": 48669,
+      "sha256": "ea2ba3f3760978b7a125f28f1a71de717d973b5cbf81b456945517a687a4e163"
     },
     {
       "path": "config.json",
@@ -100,8 +100,8 @@
     {
       "path": "model_provenance.json",
       "asset": "model_provenance.json",
-      "size_bytes": 1145,
-      "sha256": "d7af5e3513c6f5a41e58d8af81f402879faec98c0b6910d107a83e2a381529f1"
+      "size_bytes": 1111,
+      "sha256": "ce181606bcb1a23371c16b77b356fcbd27279e7105a483cf8689869d95959796"
     },
     {
       "path": "modules.json",
@@ -118,8 +118,8 @@
     {
       "path": "test_results.json",
       "asset": "test_results.json",
-      "size_bytes": 4083,
-      "sha256": "0adf23110b5368f8d105dbc2e1fd71e4530c2e323182d308d4755c69523743e9"
+      "size_bytes": 3957,
+      "sha256": "cf0b98c64a0c63da6de3529755ee5d758f06ce968b143b78f192df0dbf1387e6"
     },
     {
       "path": "tokenizer.json",
