@@ -1,6 +1,6 @@
 # HUFS BAI Legal Embed 1B 다운로드
 
-[English](distribution.md) · [모델 소개](../README.ko.md)
+[English](distribution.md) · [모델 소개](../README.md)
 
 **HUFS BAI Legal Embed 1B v0.1**은 전체 파라미터를 학습한 한국어 법률 임베딩 모델입니다. [GitHub Releases v0.1.0](https://github.com/juho127/hufs-bai-embedding-models/releases/tag/v0.1.0)에서 가중치와 토크나이저를 무료로 제공합니다. 토큰이나 구독, NVIDIA 원본 모델의 별도 다운로드가 필요하지 않습니다.
 
@@ -34,7 +34,7 @@ python scripts/download_release.py --output models/hufs-bai-legal-embed-1b-v0.1
 python examples/retrieve.py --model models/hufs-bai-legal-embed-1b-v0.1
 ```
 
-질문·문서 접두어와 검색 예시는 [모델 소개](../README.ko.md)를 참고하세요.
+질문·문서 접두어와 검색 예시는 [모델 소개](../README.md)를 참고하세요.
 
 ## 직접 다운로드와 검증
 
