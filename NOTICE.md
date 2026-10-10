@@ -4,7 +4,9 @@ HUFS BAI Embedding Models
 
 Copyright 2026 HUFS Business AI Lab.
 
-이 프로젝트는 한국외국어대학교 비즈니스AI연구실(HUFS Business AI Lab)의 한국어 도메인 특화 임베딩 연구를 위한 코드와 문서를 제공합니다.
+HUFS BAI Legal Embed 1B is a Korean legal retrieval embedding model developed by HUFS Business AI Lab, Hankuk University of Foreign Studies.
+
+HUFS BAI Legal Embed 1B는 한국외국어대학교 비즈니스AI연구실이 개발한 한국어 법률 검색 임베딩 모델입니다.
 
 ## Repository code and documentation
 
@@ -19,7 +21,9 @@ Copyright 2026 HUFS Business AI Lab.
 
 원본 모델 및 관련 설정 파일은 NVIDIA가 별도로 제공합니다. OpenMDW-1.1은 모델 자료의 사용과 수정을 허용하며, 해당 자료의 일부를 배포할 때 라이선스 사본과 적용 가능한 저작권·출처 고지를 유지하도록 규정합니다. 이 코드 저장소에는 원본 모델 가중치를 포함하지 않습니다.
 
-LoRA와 Full 학습 가중치는 아직 공개 배포하지 않았습니다. 향후 가중치 배포에는 OpenMDW-1.1 및 적용 가능한 원본 고지를 포함하고, 라이선스 범위와 원본 모델 의존성을 각 모델 카드에 명시합니다. 가중치는 이 저장소의 Apache-2.0 코드 라이선스에 일괄 포함되지 않습니다.
+The fully fine-tuned model is distributed under OpenMDW-1.1 with the NVIDIA copyright notice and original public model card. The code's Apache-2.0 license does not replace the model license. The release is a complete model and does not require a separate base-model download.
+
+전체 파라미터를 학습한 공개 모델에는 OpenMDW-1.1을 적용하며, NVIDIA 저작권 고지와 원본 공개 모델 카드를 함께 배포합니다. 코드의 Apache-2.0 라이선스가 모델 라이선스를 대체하지 않습니다. 공개 패키지는 별도 기반 모델 다운로드가 필요 없는 전체 모델입니다.
 
 ## Training data
 
@@ -35,5 +39,9 @@ AI Hub의 [공식 FAQ](https://aihub.or.kr/aihubnews/faq/list.do?currMenu=146&to
 
 - Website: [Juho BAI](https://juho-bai.pages.dev/)
 - Contact: [juho@hufs.ac.kr](mailto:juho@hufs.ac.kr)
+
+For specialized domain fine-tuning, custom embedding models, and research collaboration, contact **juho@hufs.ac.kr**.
+
+전문 도메인 특화 튜닝, 맞춤형 임베딩 모델 개발 및 연구 협업 문의는 **juho@hufs.ac.kr**로 연락해 주세요.
 
 정책 링크와 배포 상태 확인일: 2026-10-10.

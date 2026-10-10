@@ -1,6 +1,6 @@
 # Setup and local use
 
-Run commands from the repository root. Training was exercised on Linux with NVIDIA GB10 (ARM64, CUDA 13.0) and NVIDIA RTX A6000 (x86_64, CUDA 12.8). The first comparison uses one GPU per training job. Python 3.11 or newer is required by the scripts.
+Run commands from the repository root. The released model was fully fine-tuned and evaluated on one NVIDIA RTX A6000 (x86_64, CUDA 12.8). Python 3.11 or newer is required by the scripts.
 
 ## 1. Install dependencies
 
@@ -35,27 +35,24 @@ python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda
 
 `requirements.txt` intentionally leaves the PyTorch wheel choice to the platform. It pins the application packages used in the experiment; it is not a complete lockfile for every transitive dependency. The public installation instructions have not been validated as a fresh environment on every platform. The recorded experiments used these package versions on the devices above. The private experiment container is not needed or provided here.
 
-## 2. Download the base model
+## 2. Download the released model
 
 ```bash
-python scripts/download_model.py
+python scripts/download_release.py --output models/hufs-bai-legal-embed-1b-v0.1
 ```
 
-The script downloads `nvidia/Nemotron-3-Embed-1B-BF16` at revision `c0c9fea93ea424587517f2c59e20db9f1d6bf615` to `models/nemotron-3-embed-1b-bf16`. Keep the downloaded license and model configuration with the weights. `models/` is ignored by Git.
+The script downloads the complete `hufs-bai-legal-embed-1b-v0.1` model from GitHub Releases and checks file sizes and SHA-256 hashes. The standard safetensors index loads the three weight shards automatically. Keep all configuration, tokenizer and license files alongside the weights. `models/` is ignored by Git.
 
-The base weights occupy about 2.3 GB in decimal units. Full fine-tuning retains FP32 weights, about 4.6 GB for parameter tensors alone. Allow additional space for caches, intermediate files, and experiment output. Trained models are not downloaded by this script.
+The complete FP32 model occupies about 4.58 GB. No separate base download is needed for inference. For original-model evaluation or new fine-tuning only, `python scripts/download_model.py` downloads NVIDIA's pinned base revision `c0c9fea93ea424587517f2c59e20db9f1d6bf615` into `models/nemotron-3-embed-1b-bf16`.
 
 ## 3. Try retrieval
 
 ```bash
-python examples/retrieve.py
-python examples/retrieve.py --device cpu
-python examples/retrieve.py --model runs/legal_lora/model
+python examples/retrieve.py --model models/hufs-bai-legal-embed-1b-v0.1
+python examples/retrieve.py --model models/hufs-bai-legal-embed-1b-v0.1 --device cpu
 ```
 
-The example ranks two newly written, synthetic Korean passages. It uses the checkpoint's mean pooling, `query: ` and `passage: ` prompts through the Sentence Transformers APIs. It preserves FP32 full-model updates and local LoRA tensors through `scripts/model_loading.py`, uses BF16 autocast on supported CUDA devices, and disables autocast on CPU. A synthetic example demonstrates execution only.
-
-A local LoRA checkpoint also needs its referenced base model. If moving a checkpoint to a new machine, keep its adapter configuration's base-model reference resolvable. A future public weight release must include portable base-model references and the precision/configuration metadata; an adapter tensor file alone is not a complete model package.
+The example ranks two newly written, synthetic Korean passages. It uses the checkpoint's mean pooling, `query: ` and `passage: ` prompts through the Sentence Transformers APIs. It preserves FP32 full-model updates through `scripts/model_loading.py`, uses BF16 autocast on supported CUDA devices, and disables autocast on CPU. A synthetic example demonstrates execution only.
 
 ## 4. Prepare your own authorized data
 
@@ -78,19 +75,18 @@ The original experiment used an additional AI Hub-specific release procedure and
 ## 5. Train one epoch
 
 ```bash
-python scripts/train.py --config configs/train_lora_mnrl.json
 python scripts/train.py --config configs/train_full_mnrl.json
 ```
 
-Run each command separately or on an explicitly selected free GPU. Both recipes use one epoch, seed 42, maximum length 1,536, logical batch 128 and microbatch 4. Cached Multiple Negatives Ranking Loss uses the other positives in the logical batch as negatives. The sampler avoids same-family and exact-duplicate conflicts within a batch. Incompatible singleton leftovers are excluded and reported.
+Select a free GPU before training. The recipe uses one epoch, seed 42, maximum length 1,536, logical batch 128 and microbatch 4. Cached Multiple Negatives Ranking Loss uses the other positives in the logical batch as negatives. The sampler avoids same-family and exact-duplicate conflicts within a batch. Incompatible singleton leftovers are excluded and reported.
 
-The LoRA recipe updates `q_proj` and `v_proj` adapters with rank 16, alpha 32, dropout 0 and learning rate `1e-5`. The full recipe updates all model weights with learning rate `2e-6`. Both use BF16 CUDA compute; LoRA adapters and full-training master weights are retained in FP32. Every saved checkpoint is checked for exact parameter preservation and reload behavior.
+The recipe updates all model weights with learning rate `2e-6`, using BF16 CUDA compute and FP32 master weights. Every saved checkpoint is checked for exact parameter preservation and reload behavior.
 
 For a short software check with artificial data:
 
 ```bash
 python scripts/make_smoke_data.py --output data/smoke --count 256
-python scripts/train.py --config configs/train_lora_mnrl.json --train data/smoke/pairs.jsonl --output runs/smoke_lora --smoke --max-steps 2
+python scripts/train.py --config configs/train_full_mnrl.json --train data/smoke/pairs.jsonl --output runs/smoke_full --smoke --max-steps 2
 ```
 
 The synthetic run cannot be used to claim improved legal retrieval. Actual memory and runtime depend on sequence lengths and hardware; use the reported experiment settings when comparing methods. Evaluation commands and result interpretation are documented separately in this repository.

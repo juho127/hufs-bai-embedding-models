@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "hufs-bai-embedding-models",
-  "experiment": "Korean legal retrieval, initial one-epoch adaptations",
+  "experiment": "Korean legal retrieval, one-epoch full fine-tuning",
   "evaluation_split": "dev",
   "test_evaluated": false,
   "seed": 42,
@@ -96,78 +96,8 @@
       }
     }
   },
-  "lora": {
-    "status": "completed",
-    "hardware": "NVIDIA GB10",
-    "lr": 1e-05,
-    "epochs": 1,
-    "steps": 738,
-    "rank": 16,
-    "alpha": 32,
-    "dropout": 0.0,
-    "target_modules": [
-      "q_proj",
-      "v_proj"
-    ],
-    "trainable_parameters": 2097152,
-    "checkpoint_bytes": 25534528,
-    "adapter_weight_bytes": 8396720,
-    "metrics": {
-      "ndcg@10": {
-        "baseline": 0.790434692347794,
-        "candidate": 0.7957044651004616,
-        "delta": 0.005269772752667601,
-        "delta_ci95": [
-          -0.007562474667283189,
-          0.0179731213580812
-        ]
-      },
-      "mrr@10": {
-        "baseline": 0.7453531746031747,
-        "candidate": 0.7497031746031746,
-        "delta": 0.004349999999999854,
-        "delta_ci95": [
-          -0.010997549476969338,
-          0.01980119124270443
-        ]
-      },
-      "recall@10": {
-        "baseline": 0.928,
-        "candidate": 0.936,
-        "delta": 0.008000000000000007,
-        "delta_ci95": [
-          -0.008114002539619716,
-          0.024291497975708502
-        ]
-      },
-      "recall@50": {
-        "baseline": 0.98,
-        "candidate": 0.98,
-        "delta": 0.0,
-        "delta_ci95": [
-          -0.011764705882352941,
-          0.010288596156293742
-        ]
-      }
-    },
-    "bootstrap": {
-      "resampling_unit": "group",
-      "unit_count": 452,
-      "replicates": 10000,
-      "seed": 42,
-      "bootstrap_rng": {
-        "algorithm": "numpy.random.PCG64",
-        "numpy_version": "2.2.6",
-        "implementation": "query_weighted_group_sums_v1"
-      }
-    },
-    "train_seconds": 23455.23135102098,
-    "peak_cuda_allocated_gib": 9.667464256286621
-  },
   "interpretation": [
-    "Each adapted model is compared with the original evaluated on the same hardware.",
-    "Single predeclared recipe and seed; these are development-set results, not final held-out test results.",
-    "Hardware differs between LoRA and full training, so timings do not isolate method speed.",
-    "LoRA has a small positive nDCG@10 point estimate, but its paired bootstrap 95% interval includes zero."
+    "The released model is compared with the original evaluated on the same hardware.",
+    "Single predeclared recipe and seed; these are development-set results, not final held-out test results."
   ]
 }

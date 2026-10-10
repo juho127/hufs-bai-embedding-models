@@ -1,8 +1,8 @@
 # 법률 검색 평가
 
-## 연구 질문과 초기 결과
+## 공개 모델의 검색 성능
 
-연구 질문은 **한국어 법률 데이터에 대한 도메인 학습이 원본 Nemotron보다 관련 근거 문단을 잘 찾게 하는가**입니다. 주지표는 nDCG@10이며, LoRA 대비 원본과 전체 학습 대비 원본을 각각 평가합니다. 두 학습 방법끼리의 비교와 자원 사용량은 추가 분석입니다.
+**HUFS BAI Legal Embed 1B v0.1**의 한국어 법률 근거 문단 검색 성능을 기반 모델인 Nemotron-3-Embed-1B와 비교합니다. 주지표는 nDCG@10입니다. 공개 모델은 전체 파라미터를 학습했으며, 원본과 동일한 NVIDIA RTX A6000 환경에서 평가했습니다.
 
 전체 파라미터 학습 1 epoch 후 검증셋 nDCG@10은 **0.7895 → 0.8293**, 상대 **5.04%** 향상됐습니다.
 
@@ -14,19 +14,6 @@
 | Recall@50 | 0.980 | 0.988 | +0.008 | [−0.002020, +0.019725] |
 
 문서군 단위 paired bootstrap에서 nDCG@10 개선량의 95% 신뢰구간이 0보다 큽니다. Recall@50은 점추정치가 증가했지만 신뢰구간에 0이 포함됩니다.
-
-LoRA도 1 epoch 학습과 검증셋 평가를 완료했습니다.
-
-| 지표 | 원본, GB10 | LoRA, GB10 | 절대 개선량 | 개선량 95% CI |
-|---|---:|---:|---:|---|
-| **nDCG@10** | 0.790435 | **0.795704** | **+0.005270** | **[−0.007562, +0.017973]** |
-| MRR@10 | 0.745353 | 0.749703 | +0.004350 | [−0.010998, +0.019801] |
-| Recall@10 | 0.928 | 0.936 | +0.008 | [−0.008114, +0.024291] |
-| Recall@50 | 0.980 | 0.980 | 0.000 | [−0.011765, +0.010289] |
-
-LoRA의 nDCG@10 점추정치는 소폭 상승했지만 모든 지표의 개선량 신뢰구간에 0이 포함됩니다. 따라서 이번 초기 실험에서 LoRA의 검색 성능 개선은 통계적으로 확인하지 못했습니다.
-
-전체 학습은 이번 설정에서 더 큰 원본 대비 개선을 보였습니다. 원본도 GPU 및 CUDA 환경에 따라 작은 수치 차이가 있으므로 각 학습 모델은 동일 환경에서 평가한 원본과 비교합니다. 서로 다른 학습률과 하드웨어에서 얻은 이 결과를 LoRA와 전체 학습의 일반적인 우열로 확대하지 않습니다.
 
 기준일은 2026-10-10입니다. 기계가 읽을 수 있는 요약은 [initial_dev_results.json](../results/initial_dev_results.json)에 제공합니다.
 
@@ -97,7 +84,20 @@ python scripts/evaluate.py \
   --dtype float32 --autocast bfloat16 --attention sdpa
 ```
 
-학습 체크포인트를 같은 설정으로 평가해 `candidate_dev.json`을 만든 뒤 비교합니다.
+공개 모델을 같은 설정으로 평가합니다.
+
+```bash
+python scripts/evaluate.py \
+  --model models/hufs-bai-legal-embed-1b-v0.1 \
+  --corpus data/processed/legal_v1/corpus.jsonl \
+  --queries data/processed/legal_v1/dev/queries.jsonl \
+  --qrels data/processed/legal_v1/dev/qrels.jsonl \
+  --output results/local/candidate_dev.json \
+  --max-seq-length 1536 --batch-size 8 \
+  --dtype float32 --autocast bfloat16 --attention sdpa
+```
+
+질문별 점수 차이와 문서군 단위 신뢰구간을 계산합니다.
 
 ```bash
 python scripts/compare_runs.py \
@@ -111,6 +111,6 @@ python scripts/compare_runs.py \
 
 ## 결과의 적용 범위와 다음 평가
 
-현재 결과는 seed 42, 1 epoch의 검증셋 결과입니다. 학습률 탐색이나 여러 seed에 걸친 재현성을 확인한 최종 성능이 아닙니다. 최종 test는 두 학습 방식의 설정을 확정한 뒤 평가하며, 모델 선택에는 사용하지 않습니다.
+현재 결과는 seed 42, 1 epoch의 검증셋 결과입니다. 학습률 탐색이나 여러 seed에 걸친 재현성을 확인한 최종 성능이 아닙니다. 별도로 확보한 최종 test 1,000문항은 아직 평가하지 않았으며 모델 선택에 사용하지 않았습니다.
 
 자료는 입법·정책·행정·연구 보고서를 많이 포함하고 발행연도는 2006~2022년에 걸쳐 있습니다. 따라서 확인된 성과는 해당 자료의 질문에 대한 근거 문단 검색 향상입니다. 판례 검색 전반, 최신 법령의 정확성, 법률 상담 및 생성 답변의 품질은 이번 평가에 포함하지 않았습니다.

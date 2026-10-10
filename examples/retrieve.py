@@ -21,7 +21,7 @@ PASSAGES = [
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--model", default="models/nemotron-3-embed-1b-bf16",
+    parser.add_argument("--model", default="models/hufs-bai-legal-embed-1b-v0.1",
                         help="Local base-model or trained SentenceTransformer checkpoint directory")
     parser.add_argument("--query", default="물품 배송 일정이 변경된 기록을 찾고 싶어요.")
     parser.add_argument("--device", default=None, help="For example: cuda, cuda:0, or cpu")
@@ -29,7 +29,7 @@ def main():
     args = parser.parse_args()
 
     if not Path(args.model).is_dir():
-        parser.error("Local model directory not found. Run scripts/download_model.py first, "
+        parser.error("Local model directory not found. Run scripts/download_release.py first, "
                      "or pass --model with a trained checkpoint directory.")
     if not args.query.strip() or args.max_seq_length < 8:
         parser.error("Provide a non-empty query and --max-seq-length of at least 8.")

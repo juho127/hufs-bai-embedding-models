@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "model_id": "hufs-bai-legal-embed-1b-v0.1",
+  "repository": "juho127/hufs-bai-embedding-models",
+  "release_tag": "v0.1.0",
+  "license": "OpenMDW-1.1",
+  "base_model": {
+    "id": "nvidia/Nemotron-3-Embed-1B-BF16",
+    "revision": "c0c9fea93ea424587517f2c59e20db9f1d6bf615"
+  },
+  "parameters": 1140918272,
+  "precision": "float32",
+  "embedding_dimension": 2048,
+  "total_size_bytes": 4580861658,
+  "verification": {
+    "tensor_count": 146,
+    "values_exact": true,
+    "synthetic_cpu_embedding_max_abs_error": 0.0
+  },
+  "files": [
+    {
+      "path": "1_Pooling/config.json",
+      "asset": "1_Pooling-config.json",
+      "size_bytes": 91,
+      "sha256": "3c1e7e81de43a8a26715b71dc43b372b722f319bd7236e53d237cf0ab9b5f82d"
+    },
+    {
+      "path": "2_Normalize/config.json",
+      "asset": "2_Normalize-config.json",
+      "size_bytes": 97,
+      "sha256": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524"
+    },
+    {
+      "path": "BASE_MODEL_CARD.md",
+      "asset": "BASE_MODEL_CARD.md",
+      "size_bytes": 36297,
+      "sha256": "6e811480c966ca54fca9a5cbd0e5ae60df15244bfc70bb9db155c2b92fa23f8e"
+    },
+    {
+      "path": "LICENSE",
+      "asset": "LICENSE",
+      "size_bytes": 2796,
+      "sha256": "5ae76a0d16eef67e28c81bfdb0b3c8687d14e9b57094090151e7541aac457ae9"
+    },
+    {
+      "path": "config.json",
+      "asset": "config.json",
+      "size_bytes": 1091,
+      "sha256": "03ee25692c22627343d0ab47cf1ffdf3c773740ecf5a104194393dbb5f371830"
+    },
+    {
+      "path": "config_sentence_transformers.json",
+      "asset": "config_sentence_transformers.json",
+      "size_bytes": 299,
+      "sha256": "3b043432669eb2845b042f3b26b3ee8719a3dd33fa79b2783752580b802a6140"
+    },
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "asset": "model-00001-of-00003.safetensors",
+      "size_bytes": 1778445520,
+      "sha256": "a69447fd31c51d2f1974236b39e3068d772f08eb784eec8399f53e03c28abb42"
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "asset": "model-00002-of-00003.safetensors",
+      "size_bytes": 1795301096,
+      "sha256": "c39644e29151223dc6a754564c79eea99a29fa851d8b0307db0d0c7ed2a1efd0"
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "asset": "model-00003-of-00003.safetensors",
+      "size_bytes": 989942248,
+      "sha256": "7bad24c11b9ce8d5902ebd0c194fe8dcedcfa9f79eee1d8398b5b360587ef500"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "asset": "model.safetensors.index.json",
+      "size_bytes": 11127,
+      "sha256": "5359d50b9733f07deda028311a116736d7cf75cb7129e515c1929a144696a3ce"
+    },
+    {
+      "path": "modules.json",
+      "asset": "modules.json",
+      "size_bytes": 413,
+      "sha256": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd"
+    },
+    {
+      "path": "sentence_bert_config.json",
+      "asset": "sentence_bert_config.json",
+      "size_bytes": 241,
+      "sha256": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8"
+    },
+    {
+      "path": "tokenizer.json",
+      "asset": "tokenizer.json",
+      "size_bytes": 17077932,
+      "sha256": "0fa070a479dfb26a77acedeec5a43c4fb7e4314fe7d4a0a80ef281fe48c79d68"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "asset": "tokenizer_config.json",
+      "size_bytes": 21137,
+      "sha256": "e53e82376cd6a0acb9867ad511b9e35c07548fcf57f46a48688bc26cf090517b"
+    },
+    {
+      "path": "training_precision.json",
+      "asset": "training_precision.json",
+      "size_bytes": 165,
+      "sha256": "817846d63fa856614f455382153d9ebac4a5e04ebdbecd4c93888c328ecd1ff9"
+    },
+    {
+      "path": "README.md",
+      "asset": "README.md",
+      "size_bytes": 8439,
+      "sha256": "6710e40d09631fedf3fcd7a16f878c1b8d54035f44929dd955294f0294d10fd5"
+    },
+    {
+      "path": "README.ko.md",
+      "asset": "README.ko.md",
+      "size_bytes": 9116,
+      "sha256": "1ed2b9a1986fca78578c34ecf03387c7258b4134fa09fa847a72f2801d65ec1c"
+    },
+    {
+      "path": "NOTICE.md",
+      "asset": "NOTICE.md",
+      "size_bytes": 3553,
+      "sha256": "921430a69c4d0334690abbb45c705e1ed3b03636d13112dcc1750bb2583ac6e1"
+    }
+  ]
+}
