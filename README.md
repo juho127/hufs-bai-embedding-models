@@ -56,9 +56,9 @@ Both models were evaluated on the same NVIDIA RTX A6000 with 500 development que
 | Original / 원본 Nemotron-3-Embed-1B | 0.7895 | 0.7441 | 0.928 | 0.980 |
 | HUFS BAI Legal Embed 1B v0.1 | 0.8293 | 0.7897 | 0.950 | 0.988 |
 
-The nDCG@10 gain is +0.0398, with a paired document-group bootstrap 95% confidence interval of [+0.0221, +0.0581]. The corpus includes Korean legal policy, legislative and administrative documents. These are single-seed development-set results; the reserved 1,000-query test set has not been evaluated.
+The nDCG@10 gain is +0.0398, with a paired document-group bootstrap 95% confidence interval of [+0.0221, +0.0581]. The corpus includes Korean legal policy, legislative and administrative documents. These are single-seed development-set results.
 
-nDCG@10 개선량은 +0.0398이며, 문서군 단위 paired bootstrap 95% 신뢰구간은 [+0.0221, +0.0581]입니다. 평가 자료에는 법률 관련 정책·입법·행정 문서가 포함됩니다. 단일 seed의 검증셋 결과이며, 별도로 확보한 최종 test 1,000문항은 아직 평가하지 않았습니다.
+nDCG@10 개선량은 +0.0398이며, 문서군 단위 paired bootstrap 95% 신뢰구간은 [+0.0221, +0.0581]입니다. 평가 자료에는 법률 관련 정책·입법·행정 문서가 포함됩니다. 단일 seed의 검증셋 결과입니다.
 
 [Evaluation protocol / 평가 절차](docs/evaluation.md) · [Result JSON / 결과 JSON](results/initial_dev_results.json)
 
